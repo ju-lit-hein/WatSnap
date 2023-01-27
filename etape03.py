@@ -32,8 +32,9 @@ def change_filter():
     # Increment filter index
     ...
 
-    # Edit button text
-    change_filter_btn.configure(text=f"")
+    # The configure method allows us to change the text of a button
+    # Edit the varibale that is print as the filter index
+    change_filter_btn.configure(text=f"Apply filter #{0}")
 
 def apply_filter(frame):
     # Apply the new filter

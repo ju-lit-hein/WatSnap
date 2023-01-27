@@ -47,7 +47,7 @@ cam_out.pack()
 save_btn.pack()
 change_filter_btn.pack()
 
-root.after(100)
+root.after(100, get_one_frame)
 
 # Read the document to know how to display your window
 root.mainloop()
