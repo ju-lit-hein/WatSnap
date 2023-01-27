@@ -48,9 +48,19 @@ def save_anim():
 
     # Save animation
     if (save == False):
-        save = True
+        # Invert save variable
+        ...
         save_btn.configure(text = "Recording... 0 %", state = "disabled")
 
+def display_image(frame):
+    # Convert frame to PIL image
+    frame = PIL.Image.fromarray(frame)
+
+    # Convert PIL image to Tkinter image
+    cam_out.imgtk = PIL.ImageTk.PhotoImage(image = PIL.Image.fromarray(frame))
+
+    # Display image
+    cam_out.configure(image=cam_out.imgtk)
 
 def get_one_frame():
     global save
@@ -65,23 +75,29 @@ def get_one_frame():
 
     # Save frame into array
     if (save == True and anim_frames_count < anim_frames_max):
-        anim_frames.append(frame2)
-        anim_frames_count += 1
-        percentage = int(anim_frames_count / anim_frames_max * 100)
-        save_btn.configure(text=f'Recording... {percentage} %', state = "disabled")
+        # Append frame to array anim_frames
+        ...
+
+        # Increment counter
+        ...
+
+        # Compute percentage of frames saved
+        percentage = int(...)
+
+        # Update button text with percentage computed above
+        save_btn.configure(text=f"", state = "disabled")
 
     # Save array of frames into animated GIF format
     if (save == True and anim_frames_count == anim_frames_max):
-        save_btn.configure(text=f'Saving...', state = "disabled")
+        save_btn.configure(text=f"", state = "disabled")
         imageio.mimsave('animation.gif', anim_frames, 'GIF', duration=0.1)
-        anim_frames_count = 0
-        save = False
-        save_btn.configure(text = "Record", state = "normal")
+        # Reset variables
+        ...
 
-    # Convert frame from BGR to RGB for display in UI
-    frame3 = cv2.cvtColor(frame2, cv2.COLOR_BGR2RGB)
-    cam_out.imgtk = PIL.ImageTk.PhotoImage(image = PIL.Image.fromarray(frame3))
-    cam_out.configure(image = cam_out.imgtk)
+        # Put the text back to "Record"
+        save_btn.configure(text = "", state = "normal")
+
+    display_image(frame2)
 
     # Update main window after 100ms
     root.after(100, get_one_frame)
@@ -91,7 +107,6 @@ def get_one_frame():
 root = tk.Tk()
 
 # Init webcam capture
-
 cam = cv2.VideoCapture(0)
 
 

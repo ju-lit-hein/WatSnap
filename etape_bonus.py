@@ -77,6 +77,7 @@ def get_one_frame():
         anim_frames_count = 0
         save = False
         save_btn.configure(text = "Record", state = "normal")
+        # Create a new window to display that the gif has been saved unisng the older code
 
     # Convert frame from BGR to RGB for display in UI
     frame3 = cv2.cvtColor(frame2, cv2.COLOR_BGR2RGB)
@@ -85,7 +86,6 @@ def get_one_frame():
 
     # Update main window after 100ms
     root.after(100, get_one_frame)
-
 
 # Init main window
 root = tk.Tk()

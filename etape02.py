@@ -21,8 +21,12 @@ def display_image(frame):
 def get_one_frame():
     # Get one frame from webcam
     check, frame = cam.read()
-    display_image(frame)
-       
+
+    # Use functions to display frame
+    ...
+
+    # Call this function again in 100ms to get the next frame
+    ...
 
 # Init main window
 root = tk.Tk()

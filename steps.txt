@@ -6,6 +6,4 @@
       - Afficher une frame de la webcam toute les X ms
 4 - Actions sur les btn
       - command
-      - associate index to gif
-      - apply gif to webcam
-      - save gif file
+5 - Save gif file
