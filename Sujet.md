@@ -4,7 +4,7 @@
 
 <br>
 
-### Aujourd'hui, vous allez programmer votre propre interface graphique qui avec des différentes options qui change en direct le filtre sur votre caméra.
+### Aujourd'hui nous allons faire une application qui permet de prendre des photos avec de filtres comme WatSnap
 <br><br>
 
 
