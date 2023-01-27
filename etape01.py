@@ -18,5 +18,7 @@ save_btn = tk.Button(root)
 change_filter_btn = tk.Button(root)
 
 # Read the document to know how to display elements in the window
+...
 
 # Read the document to know how to display your window
+root.mainloop()

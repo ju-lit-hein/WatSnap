@@ -48,10 +48,10 @@ def apply_filter(frame):
 
 def display_image(frame):
     # Convert frame to PIL image
-    frame = PIL.Image.fromarray(frame)
+    frame1 = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
 
     # Convert PIL image to Tkinter image
-    cam_out.imgtk = PIL.ImageTk.PhotoImage(image = PIL.Image.fromarray(frame))
+    cam_out.imgtk = PIL.ImageTk.PhotoImage(image = PIL.Image.fromarray(frame1))
 
     # Display image
     cam_out.configure(image=cam_out.imgtk)
@@ -75,9 +75,9 @@ root = tk.Tk()
 cam = cv2.VideoCapture(0)
 
 # Init text value for label and button
-cam_out = tk.Label(root, text="Webcam Video")
+cam_out = tk.Label(root)
 
-# Use the parameter coomancd to call a function when the button is clicked
+# Use the parameter command to call a function when the button is clicked
 save_btn = tk.Button(root, text = "Record")
 change_filter_btn = tk.Button(root, text=f'Apply filter #{filter_index}')
 
