@@ -91,7 +91,11 @@ def get_one_frame():
 root = tk.Tk()
 
 # Init webcam capture
+i = 0
+a = True
+
 cam = cv2.VideoCapture(0)
+
 
 # UI elements
 cam_out = tk.Label(root)
@@ -103,6 +107,6 @@ save_btn.pack()
 change_filter_btn.pack()
 
 # Update main window after 100ms
-root.after(100, get_one_frame)
+root.after(100)
 
 root.mainloop()
