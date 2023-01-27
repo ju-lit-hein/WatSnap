@@ -4,11 +4,11 @@
 
 <br>
 
-### Aujourd'hui, vous allez programmer votre propre interface graphique qui avec des différents options qui change en direct le filtre sur votre caméra.
+### Aujourd'hui, vous allez programmer votre propre interface graphique qui avec des différentes options qui change en direct le filtre sur votre caméra.
 <br><br>
 
 
-### Voici les différents filtes que vous pourrez implémenter
+### Voici les différents filtres que vous pourrez implémenter
 
 ![](filter_1.png)
 
@@ -53,7 +53,7 @@ def my_other_function():
     my_variable = 2
     # Ici, my_variable vaut 2 dans tout le progamme
 ```
-### Pour finri avant de commencer le coding club, il faut savoir que pour ajouter des elements dans une liste (array), il existe la methode `append()`.
+### Pour finir avant de commencer le coding club, il faut savoir que pour ajouter des elements dans une liste (array), il existe la methode `append()`.
 ```PYTHON
 my_list = []
 my_list.append(1)
@@ -93,7 +93,7 @@ element.pack()
 root.mainloop()
 ```
 
-### Comme vous pouvez le constater, il n'y a pas de texte dans le label et les boutons, il faut donc lui en donner un.
+### Comme vous pouvez le constater, il n'y a pas de texte dans le label et les boutons, il faut donc leur en donner un.
 
 ### Rappel : Souvenez-vous des paramètres (etape 00).
 
@@ -102,15 +102,15 @@ root.mainloop()
 ## Etape 02
 
 ### Le but de l'etape 02 est d'afficher votre premiere image sur le programme.
-### Pour cela, vous allez devoir utliser une la fonction permettant d'afficher une image sur une interface graphique.
+### Pour cela, vous allez devoir utliser une fonction permettant d'afficher une image sur une interface graphique.
 
-### Completez les trou `...` dans le code pour afficher l'image sur votre interface.
+### Completez les trous `...` dans le code pour afficher l'image sur votre interface.
 <br> 
 
 ### Vous devriez obtenir le résultat suivant:
 ![](ventillator.png)
 
-### Maintenant, afin d'a'voir une suite d'image fluide (plus couramment appele une video), vous allez avoir besoin de la methode `after()` qui permet d'appeler une fonction apres un certain temps.
+### Maintenant, afin d'avoir une suite d'image fluide (plus couramment appele une video), vous allez avoir besoin de la methode `after()` qui permet d'appeler une fonction apres un certain temps.
 ```PYTHON
 root = tk.Tk()
 
@@ -120,7 +120,7 @@ root.after(100, my_function)
 
 ## Etape 03
 
-### Le but de l'etape 03 est d'appliquer un filtre sur votre video. Pour cela, vous allez devoir utiliser les boutons que vous avez crée dans l'etape 01 en leur attribuant des commandes.
+### Le but de l'etape 03 est d'appliquer un filtre sur votre video. Pour cela, vous allez devoir utiliser les boutons que vous avez créé dans l'etape 01 en leur attribuant des commandes.
 
 ### Rappel : Souvenez-vous des paramètres (etape 00).
 
@@ -133,18 +133,18 @@ root.after(100, my_function)
 
 ## Etape 04
 
-### Le but de l'etape 04 est d'enregistrer votre video en gif. Pour cela, vous allez devoir utiliser la fonction `save_anim()` qui est deja crée (meme si il faudra completer quelques trous).
+### Le but de l'etape 04 est d'enregistrer votre video en gif. Pour cela, vous allez devoir utiliser la fonction `save_anim()` qui est deja créée (meme si il faudra completer quelques trous).
 
 ### Rappel : Souvenez-vous de tout ce que vous avez fait (etape 00).
 
 <br><br>
 
-# Bravo, vous avez fini le coding club ! <br> Maintenant, nous vous proposons d'ajouter different bonus
+# Bravo, vous avez fini le coding club ! <br> Maintenant, nous vous proposons d'ajouter differents bonus
 
 ## Bonus 01
 
-### Creer une nouvelle fenetre pour indiquer que le gif est termine.
+### Créer une nouvelle fenetre pour indiquer que le gif est terminé.
 
 ## Bonus 02
 
-### Laissez faire votre creativite et ajouter ce qui vous semble le plus interessant.
+### Laissez faire votre créativité et ajouter ce qui vous semble le plus interessant.
