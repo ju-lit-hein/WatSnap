@@ -10,7 +10,7 @@ filter_index = 0
 
 def display_image(frame):
     # Convert frame to PIL image
-    frame = PIL.Image.fromarray(frame)
+    frame1 = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
 
     # Convert PIL image to Tkinter image
     cam_out.imgtk = PIL.ImageTk.PhotoImage(image = PIL.Image.fromarray(frame))

@@ -29,7 +29,7 @@ def filter_three(frame):
 
 def change_filter():
     global filter_index
-    # Increment filter index
+    # Increment filter_index varibles
     ...
 
     # The configure method allows us to change the text of a button
